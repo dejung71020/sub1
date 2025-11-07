@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자주가는웹사이트</title>
+    <style>
+      #now-chr {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      /* 구글 느낌 스타일 */
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background: #ffffff;
+        color: #202124;
+      }
+
+      main {
+        min-height: calc(100vh - 72px); /* 헤더 높이 제외 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 80px;
+        gap: 28px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        font-size: 48px;
+        font-weight: 700;
+        user-select: none;
+      }
+
+      .brand span:nth-child(1) {
+        color: #4285f4;
+      }
+      .brand span:nth-child(2) {
+        color: #ea4335;
+      }
+      .brand span:nth-child(3) {
+        color: #fbbc05;
+      }
+      .brand span:nth-child(4) {
+        color: #4285f4;
+      }
+      .brand span:nth-child(5) {
+        color: #34a853;
+      }
+      .brand span:nth-child(6) {
+        color: #ea4335;
+      }
+
+      .tiles {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .tile {
+        width: 220px;
+        min-width: 180px;
+        border-radius: 12px;
+        padding: 14px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid #eee;
+        background: linear-gradient(180deg, #fff, #fbfbfb);
+        box-shadow: 0 1px 3px rgba(60, 64, 67, 0.08);
+        transition: transform 0.12s ease, box-shadow 0.12s ease;
+      }
+
+      .tile:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 18px rgba(60, 64, 67, 0.12);
+      }
+
+      .tile .favicon {
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        background: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .tile .meta {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .tile .title {
+        font-weight: 600;
+        font-size: 15px;
+      }
+
+      .tile .url {
+        color: #5f6368;
+        font-size: 13px;
+        margin-top: 4px;
+      }
+
+      @media (max-width: 560px) {
+        .brand {
+          font-size: 36px;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./css/dj.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-menu">
+        <div class="logo">
+          <a href="./index.html" class="h-logo-text">
+            <span class="d">D</span><span class="j">J</span
+            ><span class="dash">-</span><span class="p">p</span
+            ><span class="r">r</span><span class="o">o</span
+            ><span class="j2">j</span><span class="e">e</span
+            ><span class="c">c</span><span class="t">t</span>
+          </a>
+        </div>
+        <a href="./index.html" class="nav-item">홈</a>
+        <a href="./chronology.html" class="nav-item">연대기</a>
+        <a href="./dj.html" class="nav-item">대중적인 것</a>
+        <a href="./resume.html" class="nav-item">이력서</a>
+        <a href="./website.html" id="now-chr" class="nav-item"
+          >자주가는웹사이트</a
+        >
+        <a href="./aespa.html" class="nav-item">에스파</a>
+      </nav>
+    </header>
+
+    <!-- 본문: 구글 스타일 + 타일 -->
+    <main>
+  <section class="tiles" id="tiles">
+    <!-- 기존 3개 -->
+    <a class="tile" href="https://www.youtube.com/@im_deokbae" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">D</div>
+      <div class="meta">
+        <div class="title">김덕배 (YouTube)</div>
+        <div class="url">youtube.com/@im_deokbae</div>
+      </div>
+    </a>
+
+    <a class="tile" href="https://www.instagram.com/kwonhodoo/" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">K</div>
+      <div class="meta">
+        <div class="title">권진아 (Instagram)</div>
+        <div class="url">instagram.com/kwonhodoo</div>
+      </div>
+    </a>
+
+    <a class="tile" href="https://www.youtube.com/@UNDER_WORLD_b1" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">U</div>
+      <div class="meta">
+        <div class="title">언더월드 (YouTube)</div>
+        <div class="url">youtube.com/@UNDER_WORLD_b1</div>
+      </div>
+    </a>
+
+    <!-- 임시로 추가된 18개 -->
+    <a class="tile" href="https://www.slack.com/" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">S</div>
+      <div class="meta">
+        <div class="title">슬랙</div>
+        <div class="url">slack.com</div>
+      </div>
+    </a>
+    <a class="tile" href="http://google.com/" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">g</div>
+      <div class="meta">
+        <div class="title">구글</div>
+        <div class="url">google.com</div>
+      </div>
+    </a>
+    <a class="tile" href="http://naver.com/" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">n</div>
+      <div class="meta">
+        <div class="title">네이버</div>
+        <div class="url">naver.com</div>
+      </div>
+    </a>
+    <a class="tile" href="http://discord.com/" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">d</div>
+      <div class="meta">
+        <div class="title">디스코드</div>
+        <div class="url">discord.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">A5</div>
+      <div class="meta">
+        <div class="title">사이트5</div>
+        <div class="url">example5.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">A6</div>
+      <div class="meta">
+        <div class="title">사이트6</div>
+        <div class="url">example6.com</div>
+      </div>
+    </a>
+    <a class="tile" href="https://m.sports.naver.com/wfootball/index" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">nF</div>
+      <div class="meta">
+        <div class="title">네이버 해외축구</div>
+        <div class="url">example7.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">A8</div>
+      <div class="meta">
+        <div class="title">사이트8</div>
+        <div class="url">example8.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">A9</div>
+      <div class="meta">
+        <div class="title">사이트9</div>
+        <div class="url">example9.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">B1</div>
+      <div class="meta">
+        <div class="title">사이트10</div>
+        <div class="url">example10.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">B2</div>
+      <div class="meta">
+        <div class="title">사이트11</div>
+        <div class="url">example11.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">B3</div>
+      <div class="meta">
+        <div class="title">사이트12</div>
+        <div class="url">example12.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">B4</div>
+      <div class="meta">
+        <div class="title">사이트13</div>
+        <div class="url">example13.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">B5</div>
+      <div class="meta">
+        <div class="title">사이트14</div>
+        <div class="url">example14.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">B6</div>
+      <div class="meta">
+        <div class="title">사이트15</div>
+        <div class="url">example15.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">B7</div>
+      <div class="meta">
+        <div class="title">사이트16</div>
+        <div class="url">example16.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">B8</div>
+      <div class="meta">
+        <div class="title">사이트17</div>
+        <div class="url">example17.com</div>
+      </div>
+    </a>
+    <a class="tile" href="#" target="_blank" rel="noopener noreferrer">
+      <div class="favicon">B9</div>
+      <div class="meta">
+        <div class="title">사이트18</div>
+        <div class="url">example18.com</div>
+      </div>
+    </a>
+  </section>
+  </body>
+</html>
